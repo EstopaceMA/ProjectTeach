@@ -15,7 +15,7 @@
         <b-icon :icon="headerIcon" custom-size="default" />
       </a>
     </header>
-    <div class="card-content">
+    <div>
       <slot />
     </div>
   </div>

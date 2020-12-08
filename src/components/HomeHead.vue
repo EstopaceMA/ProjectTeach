@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-hero-bar">
-    <div class="hero-body">
+    <div class="hero-body hero-body-prop">
       <div class="level">
         <div class="level-left">
           <div class="level-item">
@@ -18,6 +18,12 @@
     </div>
   </section>
 </template>
+
+<style>
+  .hero-body-prop{
+    padding: 2rem 8vw 1rem 8vw !important;
+  }
+</style>
 
 <script>
 export default {

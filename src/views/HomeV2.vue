@@ -16,27 +16,36 @@
     <section class="section is-main-section">
       <tiles>
         <card-widget
-          class="tile is-child"
-          type="is-primary"
-          icon="account-multiple"
-          :number="512"
-          label="Clients"
+          class="tile is-child card-props complete-bg"
+          label="2FN English Yr11"
         />
         <card-widget
-          class="tile is-child"
-          type="is-info"
-          icon="cart-outline"
-          :number="7770"
-          prefix="$"
-          label="Sales"
+          class="tile is-child card-props not-complete-bg"
+          label="1LX Maths Yr10"
         />
         <card-widget
-          class="tile is-child"
-          type="is-success"
-          icon="chart-timeline-variant"
-          :number="256"
-          suffix="%"
-          label="Performance"
+          class="tile is-child card-props complete-bg"
+          label="English Year 8 1"
+        />
+        <card-widget
+          class="tile is-child card-props not-complete-bg"
+          label="NP Maths Year 10"
+        />
+        <card-widget
+          class="tile is-child card-props not-complete-bg"
+          label="NP Maths Year 10"
+        />
+        <card-widget
+          class="tile is-child card-props complete-bg"
+          label="2FN English Yr11"
+        />
+        <card-widget
+          class="tile is-child card-props not-complete-bg"
+          label="1LX Maths Yr10"
+        />
+        <card-widget
+          class="tile is-child card-props complete-bg"
+          label="English Year 8 1"
         />
       </tiles>
 
@@ -48,6 +57,20 @@
     </section>
   </div>
 </template>
+
+<style>
+  .card-props{
+    height: 18.2vw;
+    border-radius: 15px;
+  }
+  .complete-bg {
+    background-color: #e5e7f3;
+  }
+
+  .not-complete-bg{
+    background-color: #f9f9f9;
+  }
+</style>
 
 <script>
 // @ is an alias to /src
