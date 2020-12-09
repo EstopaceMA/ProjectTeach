@@ -27,7 +27,7 @@ export default {
         [
           {
             to: '/',
-            icon: 'desktop-mac',
+            icon: 'home',
             label: 'Home'
           },
           {

@@ -18,6 +18,8 @@
         <card-widget
           class="tile is-child card-props complete-bg"
           label="2FN English Yr11"
+          students_completed_count="14"
+          is_self_eval_completed
         />
         <card-widget
           class="tile is-child card-props not-complete-bg"
@@ -26,6 +28,8 @@
         <card-widget
           class="tile is-child card-props complete-bg"
           label="English Year 8 1"
+          students_completed_count="14"
+          is_self_eval_completed
         />
         <card-widget
           class="tile is-child card-props not-complete-bg"
@@ -38,6 +42,8 @@
         <card-widget
           class="tile is-child card-props complete-bg"
           label="2FN English Yr11"
+          students_completed_count="14"
+          is_self_eval_completed
         />
         <card-widget
           class="tile is-child card-props not-complete-bg"
@@ -46,6 +52,8 @@
         <card-widget
           class="tile is-child card-props complete-bg"
           label="English Year 8 1"
+          students_completed_count="14"
+          is_self_eval_completed
         />
       </tiles>
 
@@ -62,6 +70,7 @@
   .card-props{
     height: 18.2vw;
     border-radius: 15px;
+    border: solid 1px #2e3f75;
   }
   .complete-bg {
     background-color: #e5e7f3;
