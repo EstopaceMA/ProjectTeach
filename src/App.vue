@@ -23,77 +23,29 @@ export default {
   computed: {
     menu () {
       return [
-        // 'General',
         [
           {
             to: '/',
             icon: 'home',
-            label: 'Home'
+            label: 'HOME'
           },
           {
             to: '/tables',
-            label: 'Surveys',
-            icon: 'table'
+            label: 'SURVEYS',
+            icon: 'square-edit-outline'
             // updateMark: true
           },
           {
             to: '/forms',
-            label: 'Results',
-            icon: 'square-edit-outline'
+            label: 'RESULTS',
+            icon: 'table'
           },
           {
             to: '/profile',
-            label: 'Profile',
+            label: 'PROFILE',
             icon: 'account-circle'
           }
         ]
-        // 'Examples',
-        // [
-        //   {
-        //     to: '/tables',
-        //     label: 'Tables',
-        //     icon: 'table',
-        //     updateMark: true
-        //   },
-        //   {
-        //     to: '/forms',
-        //     label: 'Forms',
-        //     icon: 'square-edit-outline'
-        //   },
-        //   {
-        //     to: '/profile',
-        //     label: 'Profile',
-        //     icon: 'account-circle'
-        //   },
-        //   {
-        //     label: 'Submenus',
-        //     subLabel: 'Submenus Example',
-        //     icon: 'view-list',
-        //     menu: [
-        //       {
-        //         href: '#void',
-        //         label: 'Sub-item One'
-        //       },
-        //       {
-        //         href: '#void',
-        //         label: 'Sub-item Two'
-        //       }
-        //     ]
-        //   }
-        // ]
-        // 'About',
-        // [
-        //   {
-        //     href: 'https://admin-one.justboil.me',
-        //     label: 'Premium Demo',
-        //     icon: 'credit-card'
-        //   },
-        //   {
-        //     href: 'https://justboil.me/bulma-admin-template/one',
-        //     label: 'About',
-        //     icon: 'help-circle'
-        //   }
-        // ]
       ]
     }
   },

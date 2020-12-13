@@ -3,9 +3,9 @@
     <!-- <title-bar :title-stack="titleStack" /> -->
     <home-head :has-right-visible="true">
       St. Patricks Public School <br>
-      <p style="font-size:0.5em">Survey Period: 23 June to 30 August 2020</p>
+      <p style="font-size:0.5em; color: #395297">Survey Period: 23 June to 30 August 2020</p>
       <template #right>
-          <button class="button is-link is-rounded">
+          <button class="button is-link is-rounded" style="background-color: #395297">
               <span>ADD CLASS SURVEY</span>
               <span class="icon">
                 <i class="mdi mdi-plus-circle" style="color:#fff;"></i>
@@ -63,6 +63,15 @@
         />
       </card-component> -->
     </section>
+    <section>
+      <hero-bar style="background-color: #f8f8f8; padding-left: 8vw; padding-right: 8vw">
+        Past Results
+      </hero-bar>
+      <clients-table-sample style="background-color: #fff; padding-left: 8vw; padding-right: 8vw; padding-top: 4vw;"
+          :data-url="`${$router.options.base}data-sources/past_results.json`"
+          :checkable="false"
+        />
+    </section>
   </div>
 </template>
 
@@ -86,12 +95,16 @@
 import Tiles from '@/components/Tiles'
 import CardWidget from '@/components/CardWidget'
 import HomeHead from '@/components/HomeHead'
+import HeroBar from '@/components/HeroBar'
+import ClientsTableSample from '@/components/ClientsTableSample'
 export default {
   name: 'Home',
   components: {
     CardWidget,
     Tiles,
-    HomeHead
+    HomeHead,
+    HeroBar,
+    ClientsTableSample
   }
 }
 </script>

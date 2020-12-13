@@ -15,7 +15,7 @@
         <b-icon :icon="headerIcon" custom-size="default" />
       </a>
     </header>
-    <div>
+    <div class="is-flex is-flex-direction-column" style="height: 100%">
       <slot />
     </div>
   </div>

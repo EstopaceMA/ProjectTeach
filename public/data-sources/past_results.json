@@ -1,0 +1,19 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "school": "St. Patricks",
+        "online_period": "15/03/2020 - 18/04/2020"
+      },
+      {
+        "id": 2,
+        "school": "St. Patricks",
+        "online_period": "15/03/2020 - 18/04/2020"
+      },
+      {
+        "id": 3,
+        "school": "St. Patricks",
+        "online_period": "15/03/2020 - 18/04/2020"
+      }
+    ]
+}

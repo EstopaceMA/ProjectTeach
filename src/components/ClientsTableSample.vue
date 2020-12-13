@@ -14,37 +14,21 @@
       :per-page="perPage"
       :striped="true"
       :hoverable="true"
-      default-sort="name"
+      default-sort="school"
       :data="clients"
     >
-      <b-table-column cell-class="has-no-head-mobile is-image-cell" v-slot="props">
-        <div class="image">
-          <img :src="props.row.avatar" class="is-rounded">
-        </div>
+      <b-table-column label="School" field="school" sortable v-slot="props">
+        {{ props.row.school }}
       </b-table-column>
-      <b-table-column label="Name" field="name" sortable v-slot="props">
-        {{ props.row.name }}
+      <b-table-column label="Online Period" field="company" sortable v-slot="props">
+        {{ props.row.online_period }}
       </b-table-column>
-      <b-table-column label="Company" field="company" sortable v-slot="props">
-        {{ props.row.company }}
-      </b-table-column>
-      <b-table-column label="City" field="city" sortable v-slot="props">
-        {{ props.row.city }}
-      </b-table-column>
-      <b-table-column cell-class="is-progress-col" label="Progress" field="progress" sortable v-slot="props">
-        <progress class="progress is-small is-primary" :value="props.row.progress" max="100">{{ props.row.progress }}</progress>
-      </b-table-column>
-      <b-table-column label="Created" v-slot="props">
-        <small class="has-text-grey is-abbr-like" :title="props.row.created">{{ props.row.created }}</small>
-      </b-table-column>
-      <b-table-column custom-key="actions" cell-class="is-actions-cell" v-slot="props">
-        <div class="buttons is-right">
-          <router-link :to="{name:'client.edit', params: {id: props.row.id}}" class="button is-small is-primary">
-            <b-icon icon="account-edit" size="is-small"/>
+
+      <b-table-column label="a" custom-key="actions" cell-class="is-actions-cell" v-slot="props">
+        <div class="buttons is-center">
+          <router-link :to="{name:'client.edit', params: {id: props.row.id}}" class="button is-small is-primary" style="background-color: transparent; color: #2D3E74">
+            View Results
           </router-link>
-          <button class="button is-small is-danger" type="button" @click.prevent="trashModal(props.row)">
-            <b-icon icon="trash-can" size="is-small"/>
-          </button>
         </div>
       </b-table-column>
 
@@ -67,6 +51,26 @@
     </b-table>
   </div>
 </template>
+
+<style>
+  th {
+    background-color:#2D3E74;
+  }
+
+  td{
+    text-align: center !important;
+  }
+
+  .th-wrap{
+    color: #fff;
+    display: block !important;
+    text-align: center;
+  }
+
+  .buttons{
+    display: block;
+  }
+</style>
 
 <script>
 import axios from 'axios'
@@ -92,7 +96,7 @@ export default {
       clients: [],
       isLoading: false,
       paginated: false,
-      perPage: 10,
+      perPage: 2,
       checkedRows: []
     }
   },

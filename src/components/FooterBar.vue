@@ -5,16 +5,16 @@
         <div class="level-left">
           <div class="level-item">
             <div class="footer-copyright">
-              <b>&copy; {{ year }}, JustBoil.me</b> &mdash; Admin One Demo
-              <span class="tag">v1.5.0</span>
+              <b>&copy; {{ year }}</b> &mdash; Teach
+              <span class="tag">v1.0.0</span>
             </div>
           </div>
         </div>
         <div class="level-right">
           <div class="level-item">
             <div class="logo">
-              <a href="https://justboil.me">
-                <img src="../assets/justboil-logo.svg" alt="JustBoil.me" />
+              <a href="#">
+                <img style="height: 90px" src="../assets/teach_logo.png" alt="teach_logo" />
               </a>
             </div>
           </div>

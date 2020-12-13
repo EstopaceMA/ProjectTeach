@@ -14,7 +14,7 @@ export default new Vuex.Store({
     isNavBarVisible: true,
 
     /* FooterBar */
-    isFooterBarVisible: false,
+    isFooterBarVisible: true,
 
     /* Aside */
     isAsideVisible: true,
