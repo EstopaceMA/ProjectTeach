@@ -16,7 +16,7 @@
     <section class="section is-main-section">
       <tiles>
         <card-widget
-          class="tile is-child card-props complete-bg"
+          class="tile is-child card-props complete-bg complete"
           label="2FN English Yr11"
           students_completed_count="14"
           is_self_eval_completed
@@ -26,7 +26,7 @@
           label="1LX Maths Yr10"
         />
         <card-widget
-          class="tile is-child card-props complete-bg"
+          class="tile is-child card-props complete-bg complete"
           label="English Year 8 1"
           students_completed_count="14"
           is_self_eval_completed
@@ -40,7 +40,7 @@
           label="NP Maths Year 10"
         />
         <card-widget
-          class="tile is-child card-props complete-bg"
+          class="tile is-child card-props complete-bg complete"
           label="2FN English Yr11"
           students_completed_count="14"
           is_self_eval_completed
@@ -50,7 +50,7 @@
           label="1LX Maths Yr10"
         />
         <card-widget
-          class="tile is-child card-props complete-bg"
+          class="tile is-child card-props complete-bg complete"
           label="English Year 8 1"
           students_completed_count="14"
           is_self_eval_completed
@@ -77,10 +77,10 @@
 
 <style>
   .card-props{
-    height: 18.2vw;
     border-radius: 15px;
     border: solid 1px #2e3f75;
   }
+
   .complete-bg {
     background-color: #e5e7f3;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" style="height: 100%">
     <header v-if="title" class="card-header">
       <p class="card-header-title">
         <b-icon v-if="icon" :icon="icon" custom-size="default" />
@@ -15,7 +15,7 @@
         <b-icon :icon="headerIcon" custom-size="default" />
       </a>
     </header>
-    <div class="is-flex is-flex-direction-column" style="height: 100%">
+    <div style="height: 100%">
       <slot />
     </div>
   </div>

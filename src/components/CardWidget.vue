@@ -14,7 +14,7 @@
               </p>
             </span>
         </div>
-        <div style="padding-left: 1em; padding-right: 1em; height: 0.5%">
+        <div style="padding: 1em; height: 0.5%">
           <hr>
         </div>
         <div v-if="is_self_eval_completed === true" class="is-flex is-justify-content-center is-align-items-center" style="height: 61.5%">
