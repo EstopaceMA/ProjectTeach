@@ -32,7 +32,7 @@
             </p>
           </div>
           <div class="is-flex is-justify-content-center is-align-items-center" style="height:50%">
-            <p style="font-weight: bold; font-size:0.85rem; cursor: pointer" @click="isShow = !isShow"> <i class="mdi mdi-close-box-outline"></i>  CLOSE SURVEY</p>
+            <p style="font-weight: bold; font-size:0.85rem; cursor: pointer"> <i class="mdi mdi-close-box-outline"></i>  CLOSE SURVEY</p>
           </div>
         </div>
         <div class="is-flex is-justify-content-flex-end is-align-items-flex-end edit">

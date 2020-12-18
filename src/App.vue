@@ -30,13 +30,13 @@ export default {
             label: 'HOME'
           },
           {
-            to: '/tables',
+            to: '/surveys',
             label: 'SURVEYS',
             icon: 'square-edit-outline'
             // updateMark: true
           },
           {
-            to: '/forms',
+            to: '/results',
             label: 'RESULTS',
             icon: 'table'
           },
