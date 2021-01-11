@@ -15,7 +15,10 @@
         <b-icon :icon="headerIcon" custom-size="default" />
       </a>
     </header>
-    <div style="height: 100%">
+    <div v-if="isCardComponent" style="padding: 1.75rem">
+      <slot />
+    </div>
+    <div v-else style="height: 100%">
       <slot />
     </div>
   </div>
@@ -36,6 +39,10 @@ export default {
     headerIcon: {
       type: String,
       default: null
+    },
+    isCardComponent: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {

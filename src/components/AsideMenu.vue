@@ -3,7 +3,7 @@
     <aside-tools class="teach-logo" :is-main-menu="true">
       <span slot="label" style="font-size: xx-large">
         <b>
-          <i class="mdi mdi-magnify" style="color:#fff;"></i><span style="color: #4A76C7">Teach</span>
+          Q <span style="color: #4A76C7">Teach</span>
         </b>
       </span>
     </aside-tools>

@@ -8,7 +8,7 @@
       </router-link>
     </hero-bar>
     <section class="section is-main-section">
-      <card-component title="Forms" icon="ballot">
+      <card-component isCardComponent title="Forms" icon="ballot">
         <form @submit.prevent="submit">
           <b-field label="From" horizontal>
             <b-field>
@@ -94,7 +94,7 @@
           </b-field>
         </form>
       </card-component>
-      <card-component title="Custom elements" icon="ballot-outline">
+      <card-component isCardComponent title="Custom elements" icon="ballot-outline">
         <b-field label="Checkbox" class="has-check" horizontal>
           <checkbox-picker
             v-model="customElementsForm.checkbox"
@@ -123,6 +123,23 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+  hr {
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1.5rem 0;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    background-color: #f5f5f5;
+  }
+
+  section.section.is-main-section {
+    padding: 1.5rem;
+    background-color: #f8f8f8;
+  }
+</style>
 
 <script>
 import mapValues from 'lodash/mapValues'
