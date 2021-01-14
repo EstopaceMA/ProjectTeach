@@ -24,15 +24,15 @@
                             <table>
                                 <tr>
                                     <th></th>
-                                    <th> Strongly disagree </th>
-                                    <th>  </th>
-                                    <th> Disagree </th>
-                                    <th>  </th>
-                                    <th> Neither agree nor disagree </th>
-                                    <th>  </th>
-                                    <th> Agree </th>
-                                    <th>  </th>
-                                    <th> Strongly agree </th>
+                                    <th> Strongly disagree <br><br> 1 </th>
+                                    <th> <br><br><br> 2 </th>
+                                    <th> Disagree <br><br><br> 3 </th>
+                                    <th> <br><br><br> 4 </th>
+                                    <th> Neither agree nor disagree <br> 5 </th>
+                                    <th> <br><br><br> 6 </th>
+                                    <th> Agree <br><br><br> 7 </th>
+                                    <th> <br><br><br> 8 </th>
+                                    <th> Strongly agree <br><br> 9 </th>
                                 </tr>
                                 <tr class="row">
                                     <td><span>The teacher allowed us to pursue our own interests</span>
@@ -120,13 +120,30 @@
 </template>
 
 <style scoped>
+    table td:first-child {
+        border-right: solid #dbdbdb 1px;
+    }
+
+    table th:first-child {
+        border-right: solid #dbdbdb 1px;
+    }
+
     th {
         background-color: #fff;
+        text-align: center !important;
     }
 
     td{
         border-top: 1px solid #dbdbdb;
         border-bottom: 1px solid #dbdbdb;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ececec;
+    }
+
+    tr:hover {
+        background-color: #ececec;
     }
 
     section {
@@ -145,6 +162,11 @@
     }
 
     nav {
+        display: none;
+    }
+</style>
+<style>
+    .b-steps nav {
         display: none;
     }
 </style>
