@@ -8,6 +8,9 @@
               <b>&copy; {{ year }}</b> &mdash; Teach
               <span class="tag">v1.0.0</span>
             </div>
+            <div class="footer-copyright">
+              <a href="#">Privacy Policy</a>
+            </div>
           </div>
         </div>
         <div class="level-right">
